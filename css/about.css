@@ -1,0 +1,518 @@
+@charset "utf-8";
+
+/* cssリセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: 1em;
+    margin-bottom: 18px;
+    text-indent: 1em;
+}
+
+.subtitle {
+    margin-bottom: 50px;
+}
+
+/* ヘッダー */
+
+.header_wrap2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 100%; */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    /* padding-bottom: 10px; */
+    /* text-decoration: underline  2px; */
+    /* border-bottom: solid 2px black; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background: #fff;
+    height: 60px;
+}
+.header_logo {
+    font-size: 2.78vw;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 10px;
+}
+
+.header_grandmenu {
+    display: flex;
+    justify-content: space-between;
+}
+.header_grandmenu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_grandmenu ul li {
+    margin-right: 83px;
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+
+.header_grandmenu ul li :last-child {
+    margin-right: 0px;
+}
+
+/* about */
+h2 {
+    font-size: 30px;
+}
+.about_title {
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    z-index: 101;
+}
+
+.about_photo img {
+    width: 656px;
+    position: relative;
+    z-index: 100;
+    margin-top: -30px;
+}
+
+.about_content {
+    background: #349ace;
+    color: white;
+    padding-top: 52px;
+    padding-bottom: 58px;
+    margin-bottom: 85px;
+    width: 70%;
+    position: relative;
+    z-index: 99;
+    padding-left: 280px;
+    margin-left: -220px;
+    padding-right: 44px;
+}
+
+.about_profile {
+    display: flex;
+}
+
+.about_concept {
+    /* font-size: 47px; */
+    font-size: 3.44vw;
+    padding-bottom: 30px;
+}
+
+.about_concept2 {
+    /* font-size: 30px; */
+    font-size: 2.19vw;
+    padding-bottom: 35px;
+}
+
+.about_introduce {
+    /* font-size: 16px; */
+    font-size: 1.17vw;
+    line-height: 1.75;
+}
+
+/* skills */
+
+.skills_wrap {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+.skills_wrap:last-child {
+    flex-wrap: end;
+}
+
+.skills_wrap2 {
+    display: flex;
+    width: 45%;
+    padding-bottom: 10px;
+}
+
+.skills_wrap2 ul {
+    display: block;
+    padding-left: 55px;
+    /* line-height: 1.75; liでなく、Pとかで<br>とかで改行をしていたらいけた？*/
+}
+
+.skills_title1 {
+    text-align: center;
+}
+
+.skills_design ul li {
+    padding-bottom: 20px;
+}
+
+.skills_wrap img {
+    width: 175px;
+}
+.skills_title {
+    color: #009bce;
+    font-size: 35px;
+    padding-bottom: 22px;
+    padding-left: 50px;
+}
+
+/* contact */
+
+.contact_title {
+    text-align: center;
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    margin-bottom: 85px;
+}
+
+/* フッター */
+
+.footer_whole1 {
+    background: #9b9b9b;
+    padding-top: 114px;
+    padding-bottom: 52px;
+    color: #fff;
+}
+
+.footer_whole {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footer_logo {
+    font-size: 2.78vw;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+    padding-bottom: 10px;
+    /* 上の数値が変 */
+}
+
+.footer_wrap p {
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer_img {
+    text-align: center;
+}
+
+.footer_menu {
+    font-size: 26px;
+    /* font-size: 1.9vw; */
+}
+
+.footer_menu ul {
+    display: flex;
+}
+
+.footer_menu ul li {
+    padding-right: 81px;
+}
+
+.footer_menu ul li:last-child {
+    padding-right: 0px;
+}
+
+.footer_designname {
+    text-align: center;
+    font-size: 15px;
+}
+
+.sp_footer_whole1 {
+    display: none;
+}
+.sp1_skills_wrap {
+    display: none;
+}
+.sp_contact_title {
+    display: none;
+}
+
+.sp_about_photo,
+.sp_about_content {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    /* about  */
+
+    .about_profile {
+        display: none;
+    }
+
+    .sp_about_content {
+        padding-bottom: 105px;
+    }
+    .sp_about_photo img {
+        width: 100%;
+        /* width: 500pxとかでもあり */
+        position: absolute;
+        top: 100px;
+        z-index: 110;
+    }
+
+    .sp_about_photo,
+    .sp_about_content {
+        display: block;
+    }
+
+    .sp_about_profile {
+        background: #349ace;
+        padding-bottom: 420px;
+        width: 45%;
+        margin-bottom: 65px;
+        position: relative;
+        z-index: 100;
+        padding-top: 139px;
+        margin-top: -131px;
+    }
+
+    .sp_about_title div {
+        font-size: 35px;
+        letter-spacing: 1em;
+        margin-bottom: 18px;
+        text-indent: 1em;
+    }
+
+    .sp_about_title {
+        margin-bottom: 50px;
+    }
+
+    .sp_about_concept {
+        font-size: 10.9vw;
+        padding-bottom: 22px;
+        margin: 0 50px;
+    }
+
+    .sp_about_concept2 {
+        font-size: 8vw;
+        padding-bottom: 32px;
+        margin: 0 50px;
+    }
+
+    .sp_about_introduce {
+        font-size: 4.2vw;
+        margin: 0 50px;
+        line-height: 1.75;
+    }
+
+    .sp_about_photo img {
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        z-index: 100;
+    }
+
+    /* SKILLS */
+
+    .skills_wrap {
+        display: none;
+    }
+
+    /* スマホ */
+
+    .sp1_skills_wrap {
+        display: block;
+    }
+
+    .sp1_skills_wrapdesign {
+        display: flex;
+        margin: auto;
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-bottom: 22px;
+    }
+    .sp1_skills_wrapwriting {
+        display: flex;
+        margin: auto;
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-bottom: 22px;
+    }
+
+    .sp1_skills_wrapcoding {
+        display: flex;
+        margin: auto;
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-bottom: 22px;
+    }
+
+    .sp1_skills_wrapediting {
+        display: flex;
+        margin: auto;
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-bottom: 22px;
+    }
+
+    .sp1_skills_wrapdirection {
+        display: flex;
+        margin: auto;
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-bottom: 22px;
+    }
+
+    .sp1_skills_design ul li {
+        /* padding-bottom: 20px; */
+        padding-bottom: 22px;
+        padding-left: 50px;
+        font-size: clamp(5px, 3vw, 20px);
+    }
+
+    .sp1_skills_title {
+        color: #009bce;
+        /* font-size: 35px; */
+        font-size: clamp(15px, 5vw, 35px);
+        padding-bottom: 22px;
+        padding-left: 50px;
+    }
+
+    .sp1_skills_wrapdesign img {
+        width: 130px;
+    }
+
+    .sp1_skills_wrapwriting img {
+        width: 130px;
+    }
+
+    .sp1_skills_wrapcoding img {
+        width: 130px;
+    }
+
+    .sp1_skills_wrapediting img {
+        width: 130px;
+    }
+
+    .sp1_skills_wrapdirection img {
+        width: 130px;
+    }
+
+    /* Contact */
+
+    .contact_title {
+        display: none;
+    }
+
+    .sp_contact_title {
+        display: block;
+        text-align: center;
+        border: 1px solid black;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 58px;
+        padding-bottom: 40px;
+        margin-bottom: 85px;
+    }
+
+    .sp_contact_title1 {
+        font-size: 8vw;
+        margin-bottom: 18px;
+    }
+
+    .sp_contact_subtitle {
+        padding: 0 20px 0 20px;
+    }
+
+    /* フッター */
+    .footer_whole1 {
+        display: none;
+    }
+
+    .sp_footer_logo {
+        text-align: center;
+        font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+            "游ゴシック", "Yu Gothic", sans-serif;
+        font-size: 10vw;
+        padding-bottom: 22px;
+    }
+
+    .sp_footer_img {
+        text-align: right;
+        width: 80%;
+        padding-bottom: 30px;
+        /* ちょっと左に動かしたいときどうすればいいの？ */
+    }
+
+    .sp_footer_whole1 {
+        display: block;
+        background: #9b9b9b;
+        padding-top: 114px;
+        padding-bottom: 52px;
+        color: #fff;
+    }
+
+    .sp_footer_wrap p {
+        text-align: center;
+        font-size: 2.8vw;
+        letter-spacing: 0.68em;
+        padding-bottom: 53px;
+    }
+
+    .sp_footer_menu {
+        font-size: 6.9vw;
+        display: flex;
+        margin: auto;
+        width: 60%;
+        justify-content: space-between;
+        padding-bottom: 46px;
+    }
+    .sp_footer_menu_about {
+        padding-bottom: 30px;
+    }
+    .sp_footer_menu_workflow {
+        padding-bottom: 30px;
+    }
+}

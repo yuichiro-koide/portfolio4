@@ -1,0 +1,1026 @@
+@charset "utf-8";
+
+/* cssリセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ヘッダー */
+h1 {
+    font-size: 36px;
+}
+
+.test {
+    position: relative;
+}
+
+.header_title {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.grandmenu {
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    right: 83px;
+    z-index: 100;
+}
+
+.grandmenu li {
+    margin-bottom: 10px;
+}
+
+.grandmenu li :last-child {
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 38px;
+    letter-spacing: 1em;
+    margin-bottom: 18px;
+    text-indent: 1em;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 67px;
+    line-height: 1.75;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.header_wrap {
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center; */
+    width: 100%;
+    /* box-sizing: border-box; */
+    /* margin-top: 177px; */
+    position: absolute;
+    top: 40%;
+    right: 0;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+.stickarrow {
+    width: 30px;
+    height: 8px;
+    border-bottom: 1px dashed #fff;
+    border-right: 1px dashed #fff;
+    transform: skew(45deg);
+}
+
+.grandmenu_arrows {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 固定ヘッダー */
+
+.sp_header_wrap2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* text-decoration: underline  2px; */
+    /* border-bottom: solid 2px black; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    height: 100px;
+}
+.sp_header_logo {
+    font-size: 35px;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+.sp_header_grandmenu {
+    display: flex;
+    justify-content: space-between;
+}
+.sp_header_grandmenu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sp_header_grandmenu ul li {
+    margin-right: 83px;
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+
+.sp_header_grandmenu ul li :last-child {
+    margin-right: 0px;
+}
+
+/* ? */
+.header_wrap2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    /* text-decoration: underline  2px; */
+    /* border-bottom: solid 2px black; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.header_logo {
+    font-size: 3.2vw;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 10px;
+}
+
+.header_grandmenu {
+    display: flex;
+    justify-content: space-between;
+}
+.header_grandmenu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_grandmenu ul li {
+    margin-right: 83px;
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+
+.header_grandmenu ul li :last-child {
+    margin-right: 0px;
+}
+
+/* about */
+
+.about_title {
+    text-align: center;
+}
+
+.about_photo {
+    width: 333px;
+    text-align: right;
+    position: absolute;
+    margin: 0 0 120px auto;
+    top: -30px;
+    right: -50px;
+}
+
+.about_concept {
+    font-size: 47px;
+    margin-bottom: 53px;
+    color: white;
+}
+
+.about_content {
+    background: #349ace;
+    padding: 74px 0px 80px 174px;
+    margin-right: 170px;
+    /* margin-bottom: 47px; */
+    position: relative;
+    /* top: 30px;
+    right: 30px; */
+    margin-right: calc(100vw-1020px) / 2;
+    /* margin-right: calc(calc(100vw - 1020px) / 2); */
+}
+
+/* .about_box {
+    background: #349ace;
+    width: 1196px;
+    height: 388px;
+} */
+
+.about_introduce {
+    font-size: 16px;
+    /* font-size: 1.17vw; */
+    line-height: 1.75;
+    color: white;
+    width: 50%;
+}
+
+.about_details {
+    background: #c2c2c2;
+    padding: 21px 125px;
+    border-radius: 100vh;
+    height: 100px;
+}
+.about_details1 {
+    text-align: center;
+    margin-bottom: 66px;
+    padding-top: 47px;
+}
+
+/* .about_content {
+    text-align: left;
+    padding-left: 174px;
+
+    padding-top: 10px;
+    position: relative;
+    top: -300px;
+} */
+
+/* design */
+.design_title {
+    text-align: center;
+}
+
+.design_box {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+.design_box1 img {
+    display: flex;
+    align-items: center;
+}
+
+.design_box2 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box3 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box4 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box5 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box6 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box div {
+    /* height: 286px;
+    width: 286px; */
+    margin-bottom: 50px;
+    background: #c2c2c2;
+    width: 30%;
+    /* max-width: 30%; */
+    display: flex;
+    align-items: center;
+}
+
+.design_whole {
+    margin-bottom: 50px;
+}
+
+.design_details {
+    background: #c2c2c2;
+    padding: 21px 50px;
+    border-radius: 100vh;
+    height: 100px;
+}
+.design_details1 {
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+/* workflow */
+
+.workflow_whole1 {
+    background: #ffd500;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.workflow_whole {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.workflow_step {
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+    width: 20%;
+}
+
+.workflow_step :last-child {
+    margin-right: 0;
+}
+/* 4だけ右の余白を無くしたい */
+
+.workflow_title {
+    text-align: center;
+}
+
+.arrow_whole {
+    margin-bottom: 20px;
+}
+
+.arrow_right {
+    display: inline-block;
+    height: 5px;
+    width: 120px;
+    background-color: black;
+    position: relative;
+    /* top: 40px; */
+}
+
+.arrow_right:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left: 10px solid black;
+    left: 120px;
+    top: -7.5px;
+}
+
+/* .arrow_right {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    transform: rotate(225deg);
+} */
+
+.workflow_number {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.workflow_number span {
+    font-size: 52px;
+}
+
+.workflow_subtitle {
+    font-size: 23px;
+    line-height: 1.33;
+}
+
+.workflow_contents {
+    font-size: 15px;
+    line-height: 1.75;
+    text-align: left;
+}
+/* 50vw */
+
+/* contact  */
+.contact_title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact_1 {
+    color: #ffaeba;
+}
+
+/* お問い合わせフォーム */
+
+.Form {
+    margin-top: 80px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    max-width: 720px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+    .Form {
+        margin-top: 40px;
+    }
+}
+.Form-Item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+}
+/* .Form-Item:nth-child(5) {
+} */
+.Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Label {
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+}
+.Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Label.isMsg {
+        margin-top: 0;
+    }
+}
+.Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #545454;
+    color: #fff;
+    font-size: 14px;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Label-Required {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 32px;
+        font-size: 10px;
+    }
+}
+.Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* margin-left: 40px; */
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    /* max-width: 410px; */
+    background: #eaedf2;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Input {
+        margin-left: 0;
+        margin-top: 18px;
+        height: 40px;
+        flex: inherit;
+        font-size: 15px;
+    }
+}
+.Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* margin-left: 40px; */
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    /* max-width: 410px; */
+    background: #eaedf2;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Textarea {
+        margin-top: 18px;
+        margin-left: 0;
+        height: 200px;
+        flex: inherit;
+        font-size: 15px;
+    }
+}
+.Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #545454;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+    .Form-Btn {
+        margin-top: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 160px;
+        font-size: 16px;
+    }
+}
+
+/* フッター */
+.footer_whole1 {
+    background: #9b9b9b;
+    padding-top: 114px;
+    padding-bottom: 52px;
+    color: #fff;
+}
+
+.footer_whole {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footer_logo {
+    font-size: 2.78vw;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+    padding-bottom: 10px;
+    /* 上の数値が変 */
+}
+
+.footer_wrap p {
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer_img {
+    text-align: center;
+}
+
+.footer_menu {
+    font-size: 26px;
+    /* font-size: 1.9vw; */
+}
+
+.footer_menu ul {
+    display: flex;
+}
+
+.footer_menu ul li {
+    padding-right: 81px;
+}
+
+.footer_menu ul li:last-child {
+    padding-right: 0px;
+}
+
+.footer_designname {
+    text-align: center;
+    font-size: 15px;
+}
+
+/* スライダー用 */
+.slick-dots {
+    bottom: 25px;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    color: #fff;
+}
+
+.slick-dots li button:before {
+    color: #fff;
+}
+
+.sp_about {
+    display: none;
+}
+
+.topbutton {
+    width: 125px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    z-index: 100;
+}
+
+.sp_footer_whole1 {
+    display: none;
+}
+
+.sp_grandmenu {
+    display: none;
+    z-index: 100;
+}
+
+.sp_header_whole2 {
+    display: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    background: #fff;
+    height: 46px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    /* .about_concept {
+        font-size: 30px;
+    }
+
+    .about_photo img {
+        padding-left: 10px;
+    } */
+
+    #ABOUT {
+        display: none;
+    }
+
+    .sp_about_title {
+        text-align: center;
+    }
+
+    .sp_about {
+        display: block;
+    }
+
+    .sp_about_photo {
+        text-align: center;
+    }
+
+    .sp_about_photo img {
+        width: 204px;
+        margin-bottom: -100px;
+        margin-top: 49px;
+    }
+
+    .sp_about_content {
+        background: #349ace;
+        padding-top: 165px;
+        padding-bottom: 48px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .sp_about_concept {
+        font-size: 4.95vw;
+        padding-bottom: 36px;
+        /* text-align: center; */
+    }
+    .sp_about_introduce {
+        font-size: 1.95vw;
+        line-height: 1.86;
+        text-align: left;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .sp_about_details {
+        background: #c2c2c2;
+        padding: 21px 50px;
+        border-radius: 100vh;
+        height: 100px;
+    }
+    .sp_about_details1 {
+        text-align: center;
+        margin-bottom: 66px;
+        padding-top: 47px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fixed {
+        display: none;
+    }
+
+    .sp_header_whole2 {
+        display: block;
+    }
+    .header_wrap2 {
+        display: none;
+    }
+
+    h2 {
+        font-size: 3.9vw;
+    }
+    .grandmenu {
+        display: none;
+    }
+
+    /* ハンバーガーメニュー */
+
+    .btn {
+        display: block;
+        z-index: 120;
+    }
+
+    .btn span {
+        background: black;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 23px;
+        transition: 0.3s;
+    }
+
+    .btn span::before,
+    .btn span::after {
+        content: "";
+        background: black;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .btn span::before {
+        bottom: 10px;
+    }
+    .btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+        /* background: #fff;
+        width: 33px;
+        height: 3px; */
+        /* 上の入れたら米印みたいな感じになる */
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        bottom: 0px;
+    }
+    .open span::after {
+        transform: rotate(135deg);
+        top: 0px;
+    }
+
+    .sp_grandmenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 110;
+    }
+
+    .sp_grandmenu ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sp_grandmenu li {
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        padding: 10px 0px;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "MS Ｐ明朝", "MS 明朝", serif;
+    }
+
+    /* about  */
+    /* 
+    #ABOUT {
+        display: none;
+    }
+
+    .sp_about_title {
+        text-align: center;
+    }
+
+    .sp_about {
+        display: block;
+    }
+
+    .sp_about_photo {
+        text-align: center;
+    }
+
+    .sp_about_photo img {
+        width: 204px;
+        margin-bottom: -100px;
+        margin-top: 49px;
+    }
+
+    .sp_about_content {
+        background: #349ace;
+        padding-top: 165px;
+        padding-bottom: 48px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .sp_about_concept {
+        font-size: 4.95vw;
+        padding-bottom: 36px;
+    }
+    .sp_about_introduce {
+        font-size: 1.95vw;
+        line-height: 1.86;
+        text-align: left;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .sp_about_details {
+        background: #c2c2c2;
+        padding: 21px 125px;
+        border-radius: 100vh;
+        height: 100px;
+    }
+    .sp_about_details1 {
+        text-align: center;
+        margin-bottom: 66px;
+        padding-top: 47px;
+    } */
+
+    /* design  */
+
+    .design_box div {
+        margin-bottom: 50px;
+        background: #c2c2c2;
+        width: 48%;
+        /* max-width: 30%; */
+    }
+
+    /* .design_box {
+        display: block;
+        align-items: center;
+    } */
+
+    /* workflow */
+
+    .workflow_whole {
+        display: block;
+        width: 50%;
+    }
+
+    .workflow_step {
+        margin-right: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    /* .workflow_step:last-child {
+        margin-right: 0px;
+    } */
+
+    .workflow_contents {
+        font-size: 1.9vw;
+        line-height: 1.75;
+        text-align: center;
+        /* いい感じで改行したい */
+    }
+
+    /* contact  */
+
+    /* フッター */
+
+    .footer_whole1 {
+        display: none;
+    }
+
+    .sp_footer_logo {
+        text-align: center;
+        font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+            "游ゴシック", "Yu Gothic", sans-serif;
+        font-size: 10vw;
+        padding-bottom: 22px;
+    }
+
+    .sp_footer_img {
+        text-align: right;
+        width: 80%;
+        padding-bottom: 30px;
+        /* ちょっと左に動かしたいときどうすればいいの？ */
+    }
+
+    .sp_footer_whole1 {
+        display: block;
+        background: #9b9b9b;
+        padding-top: 114px;
+        padding-bottom: 52px;
+        color: #fff;
+    }
+
+    .sp_footer_wrap p {
+        text-align: center;
+        font-size: 2.8vw;
+        letter-spacing: 0.68em;
+        padding-bottom: 53px;
+    }
+
+    .sp_footer_menu {
+        font-size: 6.9vw;
+        display: flex;
+        margin: auto;
+        width: 60%;
+        justify-content: space-between;
+        padding-bottom: 46px;
+    }
+    .sp_footer_menu_about {
+        padding-bottom: 30px;
+    }
+    .sp_footer_menu_workflow {
+        padding-bottom: 30px;
+    }
+
+    /* .sp_footer_menu ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    } */
+}
