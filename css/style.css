@@ -50,6 +50,7 @@ img {
 }
 
 /* ヘッダー */
+
 h1 {
     font-size: 36px;
 }
@@ -86,6 +87,8 @@ h2 {
     letter-spacing: 1em;
     margin-bottom: 18px;
     text-indent: 1em;
+    padding-top: 100px;
+    margin-top: -100px;
 }
 
 .subtitle {
@@ -123,6 +126,13 @@ h2 {
 .grandmenu_arrows {
     display: flex;
     justify-content: flex-end;
+}
+
+.header_ig {
+    position: absolute;
+    right: 115px;
+    top: 60px;
+    z-index: 250;
 }
 
 /* 固定ヘッダー */
@@ -165,6 +175,10 @@ h2 {
     margin-right: 0px;
 }
 
+.header_logo img {
+    margin-bottom: 10px;
+}
+
 /* ? */
 .header_wrap2 {
     display: flex;
@@ -177,6 +191,7 @@ h2 {
     /* text-decoration: underline  2px; */
     /* border-bottom: solid 2px black; */
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    background: white;
 }
 .header_logo {
     font-size: 3.2vw;
@@ -196,7 +211,8 @@ h2 {
 
 .header_grandmenu ul li {
     margin-right: 83px;
-    font-size: 1.75vw;
+    /* font-size: 1.75vw; */
+    font-size: 2.25vw;
     font-weight: bold;
 }
 
@@ -339,7 +355,7 @@ h2 {
     margin-bottom: 50px;
 }
 
-.design_details {
+/* .design_details {
     background: #c2c2c2;
     padding: 21px 50px;
     border-radius: 100vh;
@@ -348,14 +364,108 @@ h2 {
 .design_details1 {
     text-align: center;
     margin-bottom: 66px;
+} */
+
+/* <!-- 隠れるボタン --> */
+
+.hidden_box {
+    margin: 2em 0;
+    padding: 0;
+    text-align: center;
 }
+
+/*ボタン装飾*/
+.hidden_box label {
+    /* padding: 15px; */
+    padding: 21px 50px;
+    /* font-weight: bold; */
+    background: #c2c2c2;
+    /* border-radius: 5px; */
+    border-radius: 100vh;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*アイコンを表示*/
+.hidden_box label:before {
+    display: inline-block;
+    /* content: "\f078"; */
+    font-family: "FontAwesome";
+    padding-right: 5px;
+    transition: 0.2s;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: silver;
+}
+
+/*アイコンを切り替え*/
+.hidden_box input:checked ~ label:before {
+    /* content: "\f00d"; */
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    color: #668ad8;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 50px 0 0 0;
+    height: auto;
+    opacity: 1;
+}
+
+.hidden_show {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+.hidden_show div {
+    margin-bottom: 50px;
+    background: #c2c2c2;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+/* .hidden_box {
+    background: #c2c2c2;
+    padding: 21px 50px;
+    border-radius: 100vh;
+    height: 100px;
+}
+
+.label2 {
+    text-align: center;
+    margin-bottom: 66px;
+} */
+
+/* <!-- 隠れるボタン 終わり--> */
 
 /* workflow */
 
 .workflow_whole1 {
     background: #ffd500;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    /* margin-top: -10px; */
+    margin-top: 95px;
+    margin-bottom: -5px;
 }
 
 .workflow_whole {
@@ -427,6 +537,7 @@ h2 {
 .workflow_subtitle {
     font-size: 23px;
     line-height: 1.33;
+    padding-bottom: 28px;
 }
 
 .workflow_contents {
@@ -640,6 +751,8 @@ h2 {
 
 .footer_menu ul li {
     padding-right: 81px;
+    font-size: 2.75vw;
+    padding-top: 5px;
 }
 
 .footer_menu ul li:last-child {
@@ -649,6 +762,10 @@ h2 {
 .footer_designname {
     text-align: center;
     font-size: 15px;
+}
+
+.footer_logo {
+    padding-right: 0px;
 }
 
 /* スライダー用 */
@@ -706,8 +823,10 @@ h2 {
     z-index: 2;
     width: 100%;
     background: #fff;
-    height: 46px;
+    /* height: 46px; */
+    height: 3px;
     padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -872,6 +991,10 @@ h2 {
             "MS Ｐ明朝", "MS 明朝", serif;
     }
 
+    .header_ig {
+        display: none;
+    }
+
     /* about  */
     /* 
     #ABOUT {
@@ -942,17 +1065,30 @@ h2 {
         align-items: center;
     } */
 
+    .hidden_show div {
+        margin-bottom: 50px;
+        background: #c2c2c2;
+        width: 48%;
+        display: flex;
+        align-items: center;
+    }
+
     /* workflow */
+    .sp1_skills_wrap {
+        margin-right: auto;
+        margin-left: auto;
+    }
 
     .workflow_whole {
         display: block;
-        width: 50%;
+        width: 30%;
     }
 
     .workflow_step {
-        margin-right: 30px;
+        margin-right: 0;
         text-align: center;
         width: 100%;
+        margin-left: 0;
     }
     /* .workflow_step:last-child {
         margin-right: 0px;
@@ -963,6 +1099,10 @@ h2 {
         line-height: 1.75;
         text-align: center;
         /* いい感じで改行したい */
+    }
+
+    .workflow_contents {
+        padding-bottom: 70px;
     }
 
     /* contact  */
@@ -1016,6 +1156,10 @@ h2 {
     }
     .sp_footer_menu_workflow {
         padding-bottom: 30px;
+    }
+
+    .sp_footer_logo img {
+        width: 380px;
     }
 
     /* .sp_footer_menu ul {
