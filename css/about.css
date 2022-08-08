@@ -301,13 +301,12 @@ h2 {
     .sp_about_content {
         padding-bottom: 105px;
     }
-    .sp_about_photo img {
-        /* width: 100%; */
+    /* .sp_about_photo img {
         width: 500px;
         position: absolute;
         top: 100px;
         z-index: 110;
-    }
+    } */
 
     .sp_about_photo,
     .sp_about_content {
@@ -316,13 +315,20 @@ h2 {
 
     .sp_about_profile {
         background: #349ace;
+        width: 45%;
+        padding-top: 90%;
+        position: absolute;
+        z-index: -1;
+        top: 100px;
+        left: 1;
+        /* background: #349ace;
         padding-bottom: 420px;
         width: 45%;
         margin-bottom: 65px;
         position: relative;
         z-index: 100;
         padding-top: 139px;
-        margin-top: -131px;
+        margin-top: -131px; */
     }
 
     .sp_about_title div {
@@ -340,6 +346,7 @@ h2 {
         font-size: 10.9vw;
         padding-bottom: 22px;
         margin: 0 50px;
+        padding-top: 20%;
     }
 
     .sp_about_concept2 {
@@ -354,12 +361,12 @@ h2 {
         line-height: 1.75;
     }
 
-    .sp_about_photo img {
+    /* .sp_about_photo img {
         width: 100%;
         position: absolute;
         top: 200px;
         z-index: 100;
-    }
+    } */
 
     /* SKILLS */
 
@@ -368,6 +375,11 @@ h2 {
     }
 
     /* スマホ */
+
+    .sp1_skills_wrap2 {
+        display: flex;
+        justify-content: center;
+    }
 
     .sp1_skills_wrap {
         display: block;

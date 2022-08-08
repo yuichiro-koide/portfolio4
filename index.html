@@ -324,26 +324,69 @@
         </div>
 
         <!-- お問い合わせフォーム -->
+        <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdBhq5jaOJxvkzc5A-wcIfLnDQt-Hg4wjlFNKM5M8o8T4_zNg/formResponse?edit2=2_ABaOnuf0zMnOhvB27PC5tCH8ifXqlYzX--7Ypr_Lns3Qdu6gfAsrERLldJbDGNGN0Q"
+            methof="post">
+            <div class="Form">
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前</p>
+                    <input type="text" name="entry.2005620554" class="Form-Item-Input" placeholder="例）山田太郎" required>
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">任意</span>電話番号</p>
+                    <input type="phone_number" name="entry.1166974658" class="Form-Item-Input"
+                        placeholder="例）000-0000-0000">
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+                    <input type="email" name="entry.1045781291" class="Form-Item-Input"
+                        placeholder="例）example@gmail.com" required>
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+                    <textarea class="Form-Item-Textarea" name="entry.839337160" required></textarea>
+                </div>
 
-        <div class="Form">
-            <div class="Form-Item">
-                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前</p>
-                <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
             </div>
-            <div class="Form-Item">
-                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
-                <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+            <div class="aaa">
+                <input type="submit" class="Form-Btn" value="送信する">
+                <input type="reset" class="Form-Btn" value="リセット">
             </div>
-            <div class="Form-Item">
-                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-                <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+        </form>
+
+        <!-- 仮のお問合せフォーム開始 -->
+        <p style="text-align: center; margin: 40px auto">
+            お気軽にお問い合わせください。
+        </p>
+        <form class="c-form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdBhq5jaOJxvkzc5A-wcIfLnDQt-Hg4wjlFNKM5M8o8T4_zNg/formResponse?edit2=2_ABaOnuf0zMnOhvB27PC5tCH8ifXqlYzX--7Ypr_Lns3Qdu6gfAsrERLldJbDGNGN0Q"
+            methof="post">
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-name">名前・会社名<span class="c-form__required">必須</span></label>
+                <input class="c-form__input" id="field-name" name="entry.2005620554" placeholder="株式会社 山田" type="text"
+                    required="required" />
             </div>
-            <div class="Form-Item">
-                <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
-                <textarea class="Form-Item-Textarea"></textarea>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-name">電話番号<span class="c-form__required">任意</span></label>
+                <input class="c-form__input" id="field-name" name="entry.1166974658" placeholder="000-0000-0000"
+                    type="text" />
             </div>
-            <input type="submit" class="Form-Btn" value="送信する">
-        </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-mail">メールアドレス<span class="c-form__required">必須</span></label>
+                <input class="c-form__input" id="field-mail" name="entry.1045781291" placeholder="sample@gmail.com"
+                    type="email" required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-message">メッセージ内容<span class="c-form__required">必須</span></label>
+                <textarea class="c-form__input" id="field-message" name="entry.839337160"
+                    placeholder="お問い合わせ内容"></textarea>
+            </div>
+            <div class="c-form__submit">
+                <button type="submit">送信する</button>
+            </div>
+        </form>
+
+        <!-- 仮のお問合せフォーム終了 -->
 
     </section>
 
