@@ -715,7 +715,7 @@ h2 {
 }
 
 /* 仮のお問合せフォーム開始 */
-.c-form {
+/* .c-form {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -780,7 +780,7 @@ textarea.c-form__input {
     .c-form__input {
         width: 55%;
     }
-}
+} */
 
 /* 仮のお問合せフォーム終了 */
 
